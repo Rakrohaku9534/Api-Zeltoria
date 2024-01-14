@@ -35,7 +35,7 @@ router.get("/api/status", async (req, res) => {
 		speed: `${neww - old}ms`,
 		info: {
 			owner: "Zeltoria",
-			apikey: "Chat Owner: https://wa.me/6285776353741",
+			apikey: "Chat Owner: https://wa.me/6285786539008",
 		},
 	};
 	res.json(status);
