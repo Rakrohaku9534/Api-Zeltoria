@@ -2,9 +2,9 @@ var express = require('express'),
     cors = require('cors'),
     secure = require('ssl-express-www');
 const PORT = process.env.PORT || 7002 || 5000 || 3000
-const username = "zeltoria1909";
-const password = "96xAwEIGoHhOO2lR";
-const cluster = "cluster0.v5c9etv";
+const username = "rakrohaku";
+const password = "Cj7Q5Bd202WvwJfr";
+const cluster = "cluster0.9h7ssxa";
 var mongoose = require('mongoose')
 var main = require('./routes/main'),
     api = require('./routes/api')
@@ -28,10 +28,10 @@ const visitorSchema = new mongoose.Schema({
 })
 const Visitor = mongoose.model("Visitor",visitorSchema)
 app.get('/count', async function(req,res){
-	let visitors = await Visitor.findOne({name: 'Zeltoria-Rest-APIs'})
+	let visitors = await Visitor.findOne({name: 'Fallxz-Rest-APIs'})
 	if(visitors == null) {
 		const beginCount = new Visitor({
-			name : 'Zeltoria-Rest-APIs',
+			name : 'Fallxz-Rest-APIs',
 			count : 1
 		})
 		beginCount.save()
